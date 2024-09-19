@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.4e558664.css",
+    "main.js": "/Portfolio/static/js/main.eab82c4e.js",
+    "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo.png": "/Portfolio/static/media/logo.21755b3dd01b64390038.png",
+    "static/media/tmdb-movie-store.png": "/Portfolio/static/media/tmdb-movie-store.433a31e5c245949ee06f.png",
+    "static/media/duplicate-scanner.png": "/Portfolio/static/media/duplicate-scanner.b83b853e03f565f72115.png",
+    "static/media/circle-the-cat.jpg": "/Portfolio/static/media/circle-the-cat.f6384199bdd5aec8b12a.jpg",
+    "static/media/nasa-social.jpg": "/Portfolio/static/media/nasa-social.61eefb06b9abf30aa746.jpg",
+    "static/media/bulls and cows.jpeg": "/Portfolio/static/media/bulls and cows.6275ce02232d2b5626f9.jpeg",
+    "static/media/fintrack.jpg": "/Portfolio/static/media/fintrack.1420b0d9942b276c1229.jpg",
+    "static/media/cut the rope.jpg": "/Portfolio/static/media/cut the rope.5e869eeec57dabec8cd4.jpg",
+    "static/media/Yehonatan Bakshi CV Full-Stack Developer.pdf": "/Portfolio/static/media/Yehonatan Bakshi CV Full-Stack Developer.ac0d4b17006232241b53.pdf",
+    "static/media/home-main.svg": "/Portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/home-bg.jpg": "/Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/avatar.svg": "/Portfolio/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
+    "static/media/memory-card-game.jpg": "/Portfolio/static/media/memory-card-game.760f05713bfffb3d3b9d.jpg",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.4e558664.css.map": "/Portfolio/static/css/main.4e558664.css.map",
+    "main.eab82c4e.js.map": "/Portfolio/static/js/main.eab82c4e.js.map",
+    "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e558664.css",
+    "static/js/main.eab82c4e.js"
+  ]
+}
