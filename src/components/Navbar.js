@@ -117,12 +117,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar({ scrollToSection }) {
@@ -188,6 +183,19 @@ function NavBar({ scrollToSection }) {
               </Nav.Link>
             </Nav.Item>
 
+            {/* NLP Models Link */}
+            <Nav.Item>
+              <Nav.Link
+                onClick={() => {
+                  scrollToSection("nlp-section");
+                  updateExpanded(false);
+                }}
+              >
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                NLP Models
+              </Nav.Link>
+            </Nav.Item>
+            
             {/* About Link */}
             <Nav.Item>
               <Nav.Link
@@ -230,3 +238,4 @@ function NavBar({ scrollToSection }) {
 }
 
 export default NavBar;
+

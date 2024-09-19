@@ -58,11 +58,13 @@ import Type from "./Type";
 import Projects from "../Projects/Projects";
 import About from "../About/About";  // Import the About component
 import Resume from "../Resume/ResumeNew";  // Import the Resume component
+import NLPModels from "../NLPModels/NLPModels";  // Import NLPModels
 
 function Home() {
   const projectSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const resumeSectionRef = useRef(null);
+  const nlpSectionRef = useRef(null); // Ref for NLP Models
 
   return (
     <section>
@@ -106,6 +108,11 @@ function Home() {
         <Projects />
       </div>
 
+      {/* NLP Models Section */}
+      <div ref={nlpSectionRef} id="nlp-section">
+        <NLPModels />
+      </div>
+      
       {/* About Section */}
       <div ref={aboutSectionRef} id="about-section">
         <About />
@@ -115,6 +122,7 @@ function Home() {
       <div ref={resumeSectionRef} id="resume-section">
         <Resume />
       </div>
+
     </section>
   );
 }
