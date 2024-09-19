@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4e558664.css",
-    "main.js": "/Portfolio/static/js/main.eab82c4e.js",
+    "main.js": "/Portfolio/static/js/main.c28642fa.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/gmail.png": "/Portfolio/static/media/gmail.0172bf32e69b54c838ff.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.21755b3dd01b64390038.png",
+    "static/media/Reuters News.png": "/Portfolio/static/media/Reuters News.657fee9e90e592223d72.png",
     "static/media/tmdb-movie-store.png": "/Portfolio/static/media/tmdb-movie-store.433a31e5c245949ee06f.png",
     "static/media/duplicate-scanner.png": "/Portfolio/static/media/duplicate-scanner.b83b853e03f565f72115.png",
     "static/media/circle-the-cat.jpg": "/Portfolio/static/media/circle-the-cat.f6384199bdd5aec8b12a.jpg",
+    "static/media/imdb.jpg": "/Portfolio/static/media/imdb.150e9e8cdeeba054570e.jpg",
     "static/media/nasa-social.jpg": "/Portfolio/static/media/nasa-social.61eefb06b9abf30aa746.jpg",
     "static/media/bulls and cows.jpeg": "/Portfolio/static/media/bulls and cows.6275ce02232d2b5626f9.jpeg",
     "static/media/fintrack.jpg": "/Portfolio/static/media/fintrack.1420b0d9942b276c1229.jpg",
@@ -21,12 +24,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/Portfolio/index.html",
     "main.4e558664.css.map": "/Portfolio/static/css/main.4e558664.css.map",
-    "main.eab82c4e.js.map": "/Portfolio/static/js/main.eab82c4e.js.map",
+    "main.c28642fa.js.map": "/Portfolio/static/js/main.c28642fa.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e558664.css",
-    "static/js/main.eab82c4e.js"
+    "static/js/main.c28642fa.js"
   ]
 }
