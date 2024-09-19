@@ -5,8 +5,8 @@ import Card from "react-bootstrap/Card";
 
 function ModelCard(props) {
   return (
-    <Card className="project-card-view" style={{ marginBottom: "30px" }}>
-      <Card.Img variant="top" src={props.imgPath} alt="model-img" style={{ height: "200px", objectFit: "cover" }} />
+    <Card className="project-card-view">
+      <Card.Img variant="top" src={props.imgPath} alt="model-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>

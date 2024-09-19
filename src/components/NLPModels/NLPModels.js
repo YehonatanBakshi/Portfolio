@@ -3,7 +3,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import ModelCard from "./ModelCard"; 
+import ModelCard from "./ModelCard"; // Similar to ProjectCard
 
 // Import placeholder images for the NLP models (replace with actual images)
 import emailSearchImage from "../../Assets/Projects/gmail.png";
@@ -21,10 +21,10 @@ function NLPModels() {
         <p style={{ color: "white" }}>
           Here are a few NLP projects I've worked on recently, applying machine learning and natural language processing techniques.
         </p>
-        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           
-          <Col md={4} sm={12} className="project-card">
+          {/* Smart Email Search */}
+          <Col md={4} className="project-card">
             <ModelCard
               imgPath={emailSearchImage}
               title="Smart Email Search"
@@ -33,7 +33,8 @@ function NLPModels() {
             />
           </Col>
 
-          <Col md={4} sm={12} className="project-card">
+          {/* Reuters News Classification */}
+          <Col md={4} className="project-card">
             <ModelCard
               imgPath={newsClassificationImage}
               title="Reuters News Classification"
@@ -42,7 +43,8 @@ function NLPModels() {
             />
           </Col>
 
-          <Col md={4} sm={12} className="project-card">
+          {/* IMDB Sentiment Analysis */}
+          <Col md={4} className="project-card">
             <ModelCard
               imgPath={sentimentAnalysisImage}
               title="IMDB Sentiment Analysis"
