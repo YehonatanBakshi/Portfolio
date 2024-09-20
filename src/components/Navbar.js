@@ -142,8 +142,8 @@ function NavBar({ scrollToSection }) {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+      <Navbar.Brand href={process.env.PUBLIC_URL + "/"} className="d-flex">
+      <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -160,7 +160,7 @@ function NavBar({ scrollToSection }) {
             {/* Home Link */}
             <Nav.Item>
               <Nav.Link
-                href="#home"
+                // href="#home"
                 onClick={() => {
                   scrollToSection("home");
                   updateExpanded(false);
