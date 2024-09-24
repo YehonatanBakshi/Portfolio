@@ -1,75 +1,31 @@
-// import React, { useState, useEffect } from "react";
-// import Preloader from "../src/components/Pre";
-// import Navbar from "./components/Navbar";
-// import Home from "./components/Home/Home";
-// import About from "./components/About/About";
-// import Projects from "./components/Projects/Projects";
-// import Footer from "./components/Footer";
-// import Resume from "./components/Resume/ResumeNew";
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Routes,
-//   Navigate
-// } from "react-router-dom";
-// import ScrollToTop from "./components/ScrollToTop";
-// import "./style.css";
-// import "./App.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-// function App() {
-//   const [load, upadateLoad] = useState(true);
-
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       upadateLoad(false);
-//     }, 1200);
-
-//     return () => clearTimeout(timer);
-//   }, []);
-
-//   return (
-//     <Router>
-//       <Preloader load={load} />
-//       <div className="App" id={load ? "no-scroll" : "scroll"}>
-//         <Navbar />
-//         <ScrollToTop />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/project" element={<Projects />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/resume" element={<Resume />} />
-//           <Route path="*" element={<Navigate to="/"/>} />
-//         </Routes>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
-
-// export default App;
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
+import { BrowserRouter as Router } from "react-router-dom";
+
+// Importing components
+import Preloader from "./components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import Footer from "./components/Footer";
-import { BrowserRouter as Router } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import RadialMenu from "./components/RadialMenu";
+
+// Importing styles
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  // State to control the preloader visibility
+  const [load, setLoad] = useState(true);
 
+  // UseEffect to remove the preloader after 1.2 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      setLoad(false);
     }, 1200);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer); // Cleanup timeout when component unmounts
   }, []);
 
+  // Function to handle scrolling to specific sections
   const scrollToSection = (section) => {
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
@@ -79,12 +35,18 @@ function App() {
 
   return (
     <Router>
+      {/* Show preloader based on the loading state */}
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+
+      <div className={`App ${load ? "no-scroll" : "scroll"}`}>
+        {/* Navigation bar with scroll to section function */}
         <Navbar scrollToSection={scrollToSection} />
-        <ScrollToTop />
+
+        {/* Main home section */}
         <Home />
-        <Footer />
+
+        {/* Radial menu with floating buttons */}
+        <RadialMenu />
       </div>
     </Router>
   );

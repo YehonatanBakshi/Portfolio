@@ -1,13 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import pdf from "../../Assets/../Assets/Yehonatan Bakshi CV Full-Stack Developer.pdf"; // Import the resume PDF file
 
 function Home2() {
   return (
@@ -52,13 +49,15 @@ function Home2() {
             <p>
               I'm always open to discussing new projects or opportunities. Feel free to <span className="purple">connect </span>with me:
             </p>
+
+            {/* Social Icons */}
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
                   href="https://github.com/YehonatanBakshi"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -68,12 +67,24 @@ function Home2() {
                   href="https://www.linkedin.com/in/yehonatanbakshi/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
             </ul>
+
+            {/* Download Resume Button Below Social Icons */}
+            <div style={{ marginTop: "20px" }}>
+              <Button
+                variant="primary"
+                href={pdf}  // Link to your PDF resume
+                download
+                className="download-resume-btn"
+              >
+                Download Resume
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>

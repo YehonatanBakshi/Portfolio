@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+
+/* Radial Menu Container */
+.radial-menu {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+/* Central Button */
+.central-button {
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Buttons Container */
+.menu-buttons {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 60px; /* Position it above the central button */
+  right: -45px;
+  display: none;
+}
+
+/* Open the radial menu */
+.menu-buttons.open {
+  display: block;
+  animation: fade-in 0.4s ease;
+}
+
+/* Radial Buttons */
+.radial-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c63ff;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Button Positions */
+.github-btn {
+  bottom: 90px;
+  left: 10px;
+}
+
+.linkedin-btn {
+  bottom: 50px;
+  left: 70px;
+}
+
+.resume-btn {
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Hover Effect for Buttons */
+.radial-btn:hover {
+  background-color: #5248c1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust button positions for smaller screens */
+  .menu-buttons {
+    width: 120px;
+    height: 120px;
+  }
+
+  .github-btn {
+    bottom: 80px;
+    left: 5px;
+  }
+
+  .linkedin-btn {
+    bottom: 45px;
+    left: 60px;
+  }
+
+  .resume-btn {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
