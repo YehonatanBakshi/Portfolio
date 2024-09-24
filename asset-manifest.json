@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.441a9dc9.css",
-    "main.js": "/Portfolio/static/js/main.80f4dfff.js",
+    "main.css": "/Portfolio/static/css/main.ce6f7337.css",
+    "main.js": "/Portfolio/static/js/main.ffe1de43.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/gmail.png": "/Portfolio/static/media/gmail.0172bf32e69b54c838ff.png",
@@ -23,13 +23,13 @@
     "static/media/memory-card-game.jpg": "/Portfolio/static/media/memory-card-game.760f05713bfffb3d3b9d.jpg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/Portfolio/index.html",
-    "main.441a9dc9.css.map": "/Portfolio/static/css/main.441a9dc9.css.map",
-    "main.80f4dfff.js.map": "/Portfolio/static/js/main.80f4dfff.js.map",
+    "main.ce6f7337.css.map": "/Portfolio/static/css/main.ce6f7337.css.map",
+    "main.ffe1de43.js.map": "/Portfolio/static/js/main.ffe1de43.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.441a9dc9.css",
-    "static/js/main.80f4dfff.js"
+    "static/css/main.ce6f7337.css",
+    "static/js/main.ffe1de43.js"
   ]
 }
