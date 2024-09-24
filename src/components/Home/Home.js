@@ -68,9 +68,9 @@ function Home() {
       </div>
 
       {/* Experience Section */}
-      <div ref={experienceSectionRef} id="experience-section">
+      {/* <div ref={experienceSectionRef} id="experience-section">
         <ExperienceTimeline />
-      </div>
+      </div> */}
 
     </section>
   );

@@ -101,7 +101,7 @@ function NavBar({ scrollToSection }) {
             </Nav.Item>
 
             {/* Experience Link */}
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 onClick={() => {
                   scrollToSection("experience-section");
@@ -111,7 +111,7 @@ function NavBar({ scrollToSection }) {
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 Experience
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item className="fork-btn">
               <Button

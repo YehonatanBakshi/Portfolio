@@ -45,8 +45,8 @@ function App() {
         {/* Main home section */}
         <Home />
 
-        {/* Radial menu with floating buttons */}
-        <RadialMenu />
+        {/* Radial menu with floating buttons
+        <RadialMenu /> */}
       </div>
     </Router>
   );
