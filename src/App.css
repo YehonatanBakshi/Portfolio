@@ -90,7 +90,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Individual Button Positions */
+/* Individual Button Positions for desktop */
 .github-btn {
   bottom: 90px;
   left: 10px;
@@ -130,21 +130,21 @@
   .menu-buttons {
     width: 120px;
     height: 120px;
+    right: -25px;
   }
 
   .github-btn {
     bottom: 80px;
-    left: 5px;
+    left: -30px; /* Move to the left */
   }
 
   .linkedin-btn {
-    bottom: 45px;
-    left: 60px;
+    bottom: 40px;
+    left: 30px; /* Move to the right */
   }
 
   .resume-btn {
-    bottom: 10px;
-    left: 10px;
+    bottom: 0px;
+    left: -30px; /* Align with the bottom */
   }
 }
-
