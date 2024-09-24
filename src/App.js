@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 // Importing components
 import Preloader from "./components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
+import Main from "./components/Main/Main"; // Import the Main component that controls all pages
 import RadialMenu from "./components/RadialMenu";
 
 // Importing styles
@@ -42,10 +42,10 @@ function App() {
         {/* Navigation bar with scroll to section function */}
         <Navbar scrollToSection={scrollToSection} />
 
-        {/* Main home section */}
-        <Home />
+        {/* Main section controlling Home, Projects, About, etc. */}
+        <Main />
 
-        Radial menu with floating buttons
+        {/* Radial menu with floating buttons */}
         <RadialMenu />
       </div>
     </Router>

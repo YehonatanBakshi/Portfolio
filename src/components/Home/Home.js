@@ -1,20 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
-import Projects from "../Projects/Projects";
-import About from "../About/About";
-import ExperienceTimeline from "../Experience/ExperienceTimeline";  // Updated import for ExperienceTimeline
-import NLPModels from "../NLPModels/NLPModels";
+import Home2 from "./Home2";  // Home2 included here as part of Home
 
 function Home() {
-  const projectSectionRef = useRef(null);
-  const aboutSectionRef = useRef(null);
-  const experienceSectionRef = useRef(null);  // Ref for experience section
-  const nlpSectionRef = useRef(null);  // Ref for NLP Models
-
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -50,28 +41,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
+      {/* Home2 Component now part of Home */}
       <Home2 />
-
-      {/* Projects Section */}
-      <div ref={projectSectionRef} id="projects-section">
-        <Projects />
-      </div>
-
-      {/* NLP Models Section */}
-      <div ref={nlpSectionRef} id="nlp-section">
-        <NLPModels />
-      </div>
-      
-      {/* About Section */}
-      <div ref={aboutSectionRef} id="about-section">
-        <About />
-      </div>
-
-      {/* Experience Section */}
-      {/* <div ref={experienceSectionRef} id="experience-section">
-        <ExperienceTimeline />
-      </div> */}
-
     </section>
   );
 }
