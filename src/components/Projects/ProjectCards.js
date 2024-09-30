@@ -16,12 +16,13 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {/* If showMore is true, show full description, otherwise show a truncated version */}
+        <Card.Title className="project-title">{props.title}</Card.Title>
+        
+        {/* Project description with justified text */}
+        <Card.Text className="project-description" style={{ textAlign: "left", padding: "10px 0" }}>
           {showMore ? props.fullDescription : `${props.fullDescription.substring(0, 100)}...`}
         </Card.Text>
-        
+
         {/* Show/Hide More Button */}
         <Button
           variant="link"
@@ -31,19 +32,19 @@ function ProjectCards(props) {
           {showMore ? "Show Less" : "Show More"}
         </Button>
 
-        <Card.Text style={{ marginTop: "10px" }}>
+        {/* Technologies and Languages */}
+        <Card.Text className="project-languages" style={{ marginTop: "10px" }}>
           <strong>Languages: </strong>{props.languages.join(", ")}
         </Card.Text>
-        <Card.Text>
+        <Card.Text className="project-technologies">
           <strong>Technologies: </strong>{props.technologies.join(", ")}
         </Card.Text>
 
+        {/* GitHub and Demo Buttons */}
         <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}
         </Button>
 
-        {/* If the component contains a Demo link and if it's not a Blog then render the Demo button */}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -51,8 +52,7 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <CgWebsite /> &nbsp; {"Demo"}
           </Button>
         )}
       </Card.Body>
