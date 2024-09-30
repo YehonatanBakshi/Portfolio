@@ -23,16 +23,17 @@ function AboutCard() {
             Apart from coding, here are a few things I love doing:
           </p>
           <ul>
-            <li className="about-activity">
-              <ImPointRight /> Traveling and exploring new places
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Staying updated with the latest in technology
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Reading about innovations in the tech field
-            </li>
-          </ul>
+  <li className="about-activity">
+    <ImPointRight style={{ marginRight: "10px" }} /> Traveling and exploring new places
+  </li>
+  <li className="about-activity">
+    <ImPointRight style={{ marginRight: "10px" }} /> Staying updated with the latest in technology
+  </li>
+  <li className="about-activity">
+    <ImPointRight style={{ marginRight: "10px" }} /> Reading about innovations in the tech field
+  </li>
+</ul>
+
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Always curious, always learning. Code is my way to create and innovate."{" "}

@@ -12,13 +12,13 @@ function GenericCard(props) {
   };
 
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" style={{ height: '100%' }}> {/* Ensuring card takes full height */}
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body style={{ textAlign: "left" }}>
-        <Card.Title className="project-title">{props.title}</Card.Title>
+      <Card.Body style={{ display: 'flex', flexDirection: 'column', textAlign: "left" }}>
+        <Card.Title className="project-title"><strong>{props.title}</strong></Card.Title>
 
         {/* Description with Show More functionality */}
-        <Card.Text className="project-description" style={{ textAlign: "left", padding: "10px 0" }}>
+        <Card.Text className="project-description" style={{ padding: "10px 0" }}>
           {showMore ? props.description : `${props.description.substring(0, 100)}...`}
           <Button variant="link" style={{ textDecoration: "none" }} onClick={toggleShowMore}>
             {showMore ? "Show Less" : "Show More"}
@@ -38,7 +38,7 @@ function GenericCard(props) {
         )}
 
         {/* Centered GitHub and Demo Buttons */}
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <div style={{ marginTop: "auto", textAlign: "center" }}> {/* Ensure buttons are at the bottom */}
           {props.ghLink && (
             <Button variant="primary" href={props.ghLink} target="_blank" style={{ margin: "5px" }}>
               <BsGithub /> &nbsp; {props.isBlog ? "Blog" : "GitHub"}

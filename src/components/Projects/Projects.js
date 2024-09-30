@@ -73,6 +73,54 @@ function Projects() {
               ghLink="https://github.com/YoniBakshi/NASA-Social-Site"
             />
           </Col>
+
+          {/* TMDB Movie Store Project */}
+          <Col md={4} className="project-card">
+            <GenericCard
+              imgPath={tmdbMovie}
+              title="TMDB Movie Store"
+              description="This project is a digital storefront for browsing, searching, and purchasing movies. It allows users to search for movies by name, filter by genres, sort by name or year, and view details in a searchable interface. It integrates a cart system for selecting movies to purchase, showcasing a seamless blend of front-end and back-end functionalities to enhance the shopping experience."
+              languages={["JavaScript", "Java", "CSS", "HTML"]}
+              technologies={["React", "Spring Boot", "MySQL", "Maven", "Spring Session Beans", "SQL Server", "TMDB API"]}
+              ghLink="https://github.com/YoniBakshi/TMDB-Movie-Store"
+            />
+          </Col>
+
+          {/* Memory Card Game Project */}
+          <Col md={4} className="project-card">
+            <GenericCard
+              imgPath={memoryCard}
+              title="Memory Card Game"
+              description="This is an engaging memory card game featuring limited edition images, designed for players to match pairs of cards. It includes customizable game settings, a high-score leaderboard, and implements a unique scoring formula based on game performance metrics, providing a fun and competitive experience for users."
+              languages={["JavaScript", "HTML"]}
+              technologies={[]}
+              ghLink="https://github.com/YoniBakshi/Memory-Card-Game"
+            />
+          </Col>
+
+          {/* Bulls and Cows Project */}
+          <Col md={4} className="project-card">
+            <GenericCard
+              imgPath={bullsCows}
+              title="Bulls and Cows"
+              description="This web application is an interactive guessing game where players attempt to deduce a secret number, receiving hints if their guesses are too high or too low. It features a high score system where players can save their scores and view the top rankings, enhancing competitiveness and engagement. The application is crafted with a clear separation of concerns, employing React for dynamic front-end interactions and Java Servlets for server-side data management, including score tracking."
+              languages={["Java", "CSS", "HTML", "JavaScript"]}
+              technologies={["React", "Bootstrap", "Java Servlets", "ObjectStreams"]}
+              ghLink="https://github.com/YoniBakshi/Bulls-and-Cows"
+            />
+          </Col>
+
+          {/* Duplicate Scanner Project */}
+          <Col md={4} className="project-card">
+            <GenericCard
+              imgPath={duplicateScanner}
+              title="Duplicate Scanner"
+              description="This project is a utility tool designed to help users identify and manage duplicate files within their system. It features a graphical user interface for ease of use, allowing for the selection of directories, initiation of scans for duplicates based on file size, and provides options for managing the detected duplicates, including deletion and preview functionalities."
+              languages={["Python"]}
+              technologies={[]}
+              ghLink="https://github.com/YehonatanBakshi/duplicate-scanner"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
