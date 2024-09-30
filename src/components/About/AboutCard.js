@@ -4,10 +4,10 @@ import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "left" }}>
+    <Card className="quote-card-view" style={{ padding: "0", border: "none" }}> {/* Remove padding and border */}
+      <Card.Body style={{ padding: "0" }}> {/* Remove padding from Card.Body */}
+        <blockquote className="blockquote mb-0" style={{ margin: "0", textAlign: "left" }}> {/* Ensure no margins */}
+          <p>
             Hi Everyone, I am <span className="purple">Yehonatan Bakshi </span>, a passionate developer.
             <br />
             I recently graduated with a Bachelor's degree in Computer Science.

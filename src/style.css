@@ -327,7 +327,7 @@ button:focus {
   color: white !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
-  text-align: center;
+  text-align: left;
 }
 
 .home-about-body {

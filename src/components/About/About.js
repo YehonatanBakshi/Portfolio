@@ -1,11 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import AboutCard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import Techstack from "./Techstack";
 
 function About() {
   return (
@@ -19,16 +17,21 @@ function About() {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
+              textAlign: "left",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", textAlign: "left" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
-            <Aboutcard />
+            <AboutCard /> {/* This will now have zero padding */}
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{
+              paddingTop: "30px", // Align with the title padding
+              paddingBottom: "50px",
+              textAlign: "left", 
+            }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
@@ -39,13 +42,6 @@ function About() {
         </h1>
 
         <Techstack />
-
-        {/* <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack /> */}
-
-        {/* <Github /> */}
       </Container>
     </Container>
   );

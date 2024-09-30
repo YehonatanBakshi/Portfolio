@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import GenericCard from "../GenericCard"; // Use GenericCard instead of ModelCard
 import Particle from "../Particle";
-import ModelCard from "./ModelCard";
 
 // Import placeholder images for the NLP models (replace with actual images)
 import emailSearchImage from "../../Assets/Projects/gmail.png";
@@ -23,7 +23,7 @@ function NLPModels() {
           
           {/* Smart Email Search */}
           <Col md={4} className="project-card">
-            <ModelCard
+            <GenericCard
               imgPath={emailSearchImage}
               title="Smart Email Search"
               description="Developed a smart email search system using Python, BERT, and clustering algorithms to efficiently find specific emails within large datasets, enhancing search accuracy and efficiency."
@@ -34,7 +34,7 @@ function NLPModels() {
 
           {/* Reuters News Classification */}
           <Col md={4} className="project-card">
-            <ModelCard
+            <GenericCard
               imgPath={newsClassificationImage}
               title="Reuters News Classification"
               description="Developed a text classification system using Python, NLTK, Regex, and machine learning algorithms like Naive Bayes and SVM to categorize financial news articles, improving automated news analysis."
@@ -45,7 +45,7 @@ function NLPModels() {
 
           {/* IMDB Sentiment Analysis */}
           <Col md={4} className="project-card">
-            <ModelCard
+            <GenericCard
               imgPath={sentimentAnalysisImage}
               title="IMDB Sentiment Analysis"
               description="Created a sentiment analysis system using Python, NLTK, TensorFlow, and Keras to classify IMDB movie reviews as positive or negative, boosting sentiment detection accuracy."
